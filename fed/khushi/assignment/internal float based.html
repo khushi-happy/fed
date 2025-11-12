@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head{
+            background-color: rgb(56, 110, 180);height: 150px;
+        }
+        h1{
+            text-align: center; color: white;
+        }
+        .nav{
+            background-color: rgb(80, 96, 131); width: 90%; height: 40px;margin: 30px; text-align: center;
+        }
+        .navi{
+            background-color: rgb(85, 151, 204); padding: 5px; float: left;margin-top: 5px ;margin-right: 15px;width: 250px;margin-left: 5px;
+        }
+        .content{
+            clear: both;
+        }
+        .content1{
+            width: 20%;background-color: rgb(189, 224, 189);margin-left: 10px; margin-top: 10px;height: 300px;float: left;
+        }
+        
+        .h4{
+            margin-top: 20px;padding-left: 10px;padding-top: 10px;
+        }
+        .c2{
+            padding-left: 10px;
+        }
+        .hr{
+            margin-left: 10px;margin-right: 10px;
+        }
+        .content2{
+            width: 1000px;background-color: rgb(222, 226, 230);height: 300px;float: left;margin-top: 10px;
+        }
+        .h3{
+            padding-left: 10px;
+        }
+        .c21{
+            background-color: rgb(233, 198, 233); width: 500px;margin-left: 10px;float: left;
+        }
+        .h41{
+            padding-left: 10px;padding-top: 10px;
+        }
+        .p{
+            padding: 10px;
+        }
+        .pinkbox{
+            background-color: rgb(233, 198, 233); width: 500px;margin-left: 10px;float: left;
+        }
+        .pinkbox2{
+            background-color: rgb(233, 198, 233); width: 400px;margin-left: 50px;float: left;height: 150px;
+        }
+        .h42{
+            padding-left: 10px;
+        }
+        .yellowbox{
+            background-color: rgb(255, 255, 192); width: 1250px;float: left;margin: 10px;
+        }
+        .footer{
+            background-color: rgb(56, 110, 180);float: left;width: 100%;text-align: center;margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1 id="h1">Float-Based Web Layout</h1>
+        <div class="nav">
+            <div class="navi">Home</div>
+            <div class="navi">About</div>
+            <div class="navi">Services</div>
+            <div class="navi">Contact</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content1">
+            <h4 class="h4">Sidebar</h4>
+            <span class="c2">Menu item 1</span>
+            <hr class="hr">
+            <span class="c2">Menu item 2</span>
+            <hr class="hr">
+            <span class="c2">Menu item 3</span>
+            <hr class="hr">
+            <span class="c2">Menu item 4</span>
+            <hr class="hr">
+            <span class="c2">Menu item 5</span>
+            <hr class="hr">
+        </div>
+        <div class="content2">
+           <h3 class="h3">Main Content Area</h3>
+            <p class="h3">This layout is created using CSS float properties.The Sidebar is floated left and the main content is floated right.</p>
+            <div class="pinkbox">
+                <h4 class="h41">Float Column 1</h4>
+                <p class="p">This column is floated left.Float was commonly used for layouts before flexbox and CSS grid.</p>
+            </div>
+            <div class="pinkbox2">
+                <h4 class="h42">Float Column 2</h4>
+                <p class="p">This column is also floated in left. Using float for layout requires careful clearing of floats. </p>
+            </div>
+        </div>
+        <div class="yellowbox">
+            <h4 class="h42">About float layout</h4>
+            <p class="h42">CSS float is a property that positions an element to the left or right of its container, allowing text and inline elements to wrap around it.</p>
+            <p class="h42">While float is still useful for wrapping text around images, it's no longer the preferred method for creating complex page layouts.</p>
+        </div>
+        <div>
+            <div class="footer">
+            <p>@ 2023 Float Layout Example.All Rights Reserved.</p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
