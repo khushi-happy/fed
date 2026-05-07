@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="signup">
+        <div class="fields">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" placeholder="Your name">
+            <p id="name error" class="error"></p>
+        </div>
+    </form>
+    <script>
+        const form = document.getElementById("signupForm");
+        const nameInput = document.getElementById("name");
+        const emailInput = document.getElementById("email");
+        const passInput = document.getElementById("password");
+        const confirmInput = document.getElementById("confirm");
+        const nameError = document.getElementById("nameError");
+        const emailError = document.getElementById("emailError");
+        const passError = document.getElementById("passwordError");
+        const confirmError = document.getElementById("confirmError");
+        const result = document.getElementById("result");
+
+        function showerror(el,message){
+            el.innerHTML=message ;
+        }
+
+        function clearerror(el){
+            el.innerHTML="";
+        }
+
+        function ValidateForm(){
+            return false;
+        }
+    </script>
+</body>
+</html>
