@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Todo List</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background-color: #f0f0f0;
+      padding-top: 50px;
+    }
+
+    .box {
+      background: white;
+      width: 300px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    input {
+      width: 180px;
+      padding: 10px;
+    }
+
+    button {
+      padding: 10px;
+      background: blue;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    li {
+      margin-top: 10px;
+      background: #eee;
+      padding: 10px;
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>Todo List</h1>
+
+    <input type="text" id="taskInput" placeholder="Enter task">
+
+    <button onclick="addTask()">Add</button>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script>
+    function addTask() {
+
+      // Get input value
+      let input = document.getElementById("taskInput");
+
+      // Create list item
+      let li = document.createElement("li");
+
+      // Put input text inside li
+      li.innerText = input.value;
+
+      // Add li to ul
+      document.getElementById("taskList").appendChild(li);
+
+      // Clear input box
+      input.value = "";
+    }
+  </script>
+
+</body>
+</html>
